@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header.tsx'
+
 
 const Home: NextPage = () => {
   return (
-      <p className="text-3xl font-bold underline">Hello</p>
+      <Header/>
   )
 }
 
