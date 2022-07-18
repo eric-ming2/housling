@@ -1,0 +1,20 @@
+{
+    "The Standard": {
+        "price": 2000,
+        "distanceCulc": 20,
+        "distanceCrc": 30,
+        "website": "www.google.com"
+    },
+    "The Mark": {
+        "price": 2200,
+        "distanceCulc": 10,
+        "distanceCrc": 30,
+        "website": "www.google.com"
+    },
+    "UHouse": {
+        "price": 1200,
+        "distanceCulc": 20,
+        "distanceCrc": 30,
+        "website": "www.google.com"
+    }
+}
