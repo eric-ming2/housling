@@ -4,14 +4,19 @@ import Card from '../components/Card'
 
 const CardContainer: FunctionComponent = () => {
     console.log(sampleData)
-    //const data = JSON.stringify(sampleData)
 
     const locationCards = sampleData.location.map((location) => (
         <Card location={location} />
     ))
 
-    return <div>{locationCards}</div>
-    //return <Card name="The Standard" details={sampleData['The Standard']} />
+    return (
+            <div
+      class="flex flex-col pt-20 bg-gray-200 mx-auto min-h-screen max-w-4xl lg:max-w-5xl xl:max-w-6xl"
+    >
+
+        <div className="grid grid-cols-1 gap-y-4 relative">{locationCards}</div>
+            </div>
+    )
 }
 
 export default CardContainer

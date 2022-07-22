@@ -6,8 +6,8 @@ import CardContainer from '../components/CardContainer.tsx'
 
 const Home: NextPage = () => {
     return (
-        <div>
-            <Header className="bg-white w-full fixed"/>
+        <div className="bg-gray-200">
+            <Header />
             <CardContainer />
         </div>
     )
