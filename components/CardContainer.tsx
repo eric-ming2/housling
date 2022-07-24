@@ -10,12 +10,7 @@ const CardContainer: FunctionComponent = () => {
     ))
 
     return (
-            <div
-      class="flex flex-col pt-20 bg-gray-200 mx-auto min-h-screen max-w-4xl lg:max-w-5xl xl:max-w-6xl"
-    >
-
         <div className="grid grid-cols-1 gap-y-4 relative">{locationCards}</div>
-            </div>
     )
 }
 
