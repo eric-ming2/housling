@@ -6,7 +6,7 @@ const CardContainer: FunctionComponent = () => {
     console.log(sampleData)
 
     const locationCards = sampleData.location.map((location) => (
-        <Card location={location} />
+        <Card location={location} key={location.name} />
     ))
 
     return (
