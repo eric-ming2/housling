@@ -6,7 +6,7 @@ import HomeContents from '../components/HomeContents'
 
 const Home: NextPage = () => {
     return (
-        <div className="bg-gray-200">
+        <div className="bg-gray-200 overflow-auto">
             <Header />
             <HomeContents />
         </div>

@@ -12,7 +12,7 @@ const HomepageHero: FunctionComponent = () => (
         </div>
         <div class="absolute grid place-items-center bottom-2/3 inset-x-2 text-white z-0">
             <div class="text-7xl font-bold"> Off-Campus Housing Made Easy </div>
-            <div class="text-xl font-bold pt-2">
+            <div class="text-3xl font-bold pt-2">
                 Created by Georgia Tech Students, for Georgia Tech Students
             </div>
         </div>

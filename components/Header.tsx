@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react'
 
 const Header: FunctionComponent = () => (
-    <div className="bg-white w-full fixed">
-        <header className="text-gray-600 body-font">
+    <div className="bg-white w-full fixed top-0 z-50">
+        <nav className="text-gray-600 body-font">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a className="flex title-font font-medium items-center text-gray-900 mb-2 md:mb-0">
                     <svg
@@ -40,7 +40,7 @@ const Header: FunctionComponent = () => (
                     </svg>
                 </button>
             </div>
-        </header>
+        </nav>
     </div>
 )
 
