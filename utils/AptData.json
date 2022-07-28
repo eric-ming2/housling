@@ -5,6 +5,7 @@
             "price": 2000,
             "distanceCulc": 20,
             "distanceCrc": 30,
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328343896205/TheStandard.jpeg",
             "website": "www.google.com"
         },
         {
@@ -12,6 +13,7 @@
             "price": 2200,
             "distanceCulc": 10,
             "distanceCrc": 30,
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
             "website": "www.google.com"
         },
         {
@@ -19,6 +21,7 @@
             "price": 1200,
             "distanceCulc": 20,
             "distanceCrc": 30,
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328536838185/UHouse.webp",
             "website": "www.google.com"
         }
     ]

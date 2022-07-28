@@ -1,11 +1,9 @@
 import React, { FunctionComponent } from 'react'
-import sampleData from '../assets/sampleData.json'
+import AptData from '../utils/AptData.json'
 import Card from '../components/Card'
 
 const CardContainer: FunctionComponent = () => {
-    console.log(sampleData)
-
-    const locationCards = sampleData.location.map((location) => (
+    const locationCards = AptData.location.map((location) => (
         <Card location={location} key={location.name} />
     ))
 

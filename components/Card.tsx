@@ -1,14 +1,12 @@
 import React, { FunctionComponent } from 'react'
 import Image from 'next/image'
-import standardPicture from '../assets/TheStandard.jpeg'
-import markPicture from '../assets/TheMark.jpeg'
-import uhousePicture from '../assets/UHouse.webp'
 
 type Location = {
     name: string
     price: string
     distanceCulc: number
     distanceCrc: number
+    image: string
     website: string
 }
 
@@ -17,12 +15,6 @@ type CardProps = {
 }
 
 const Card: FunctionComponent<CardProps> = (props) => {
-    const pictureMap = new Map<string, object>([
-        ['The Standard', standardPicture],
-        ['The Mark', markPicture],
-        ['UHouse', uhousePicture],
-    ])
-
     return (
         <a
             href="#"
@@ -33,7 +25,7 @@ const Card: FunctionComponent<CardProps> = (props) => {
         >
             <div class="w-full h-max rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg relative overflow-hidden">
                 <Image
-                    src={pictureMap.get(props.location.name)}
+                    src={props.location.image}
                     layout="fill"
                     objectFit="cover"
                 />
