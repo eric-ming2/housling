@@ -15,7 +15,7 @@ type HomeContentsProps = {
 }
 
 const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
-    const [sortBy, setSortBy] = useState('Popular')
+    const [sortBy, setSortBy] = useState('Popularity')
     return (
         <div class="flex flex-col space-y-2 pt-20 bg-gray-200 mx-auto min-h-screen max-w-4xl lg:max-w-5xl xl:max-w-6xl">
             <SortBy sortBy={sortBy} setSortBy={setSortBy} />

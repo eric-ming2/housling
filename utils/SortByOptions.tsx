@@ -1,6 +1,6 @@
 const sortByOptions = [
     {
-        name: 'Popular',
+        name: 'Popularity',
         svg: (
             <svg
                 class="h-8 w-8 text-gray-500"

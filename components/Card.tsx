@@ -28,10 +28,10 @@ const Card: FunctionComponent<CardProps> = (props) => {
             href="#"
             class="flex flex-col items-center h-50
     bg-white rounded-lg border shadow-md
-    md:flex-row md:max-w-xl hover:bg-gray-100
-    dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+    md:flex-row hover:bg-gray-100
+    dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 justify-self-center"
         >
-            <div class="w-full h-max rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg relative">
+            <div class="w-full h-max rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg relative overflow-hidden">
                 <Image
                     src={pictureMap.get(props.location.name)}
                     layout="fill"
