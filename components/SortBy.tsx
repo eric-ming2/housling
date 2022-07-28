@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import sortByOptions from '../utils/SortByOptions'
+import svgList from '../utils/Svgs'
 
 type Location = {
     name: string
@@ -15,26 +15,33 @@ type SortByProps = {
 }
 
 const SortBy: FunctionComponent<SortByProps> = (props) => {
+    const sortByOptions: string[] = [
+        'Popularity',
+        'Rating',
+        'Price',
+        'Distance',
+        'Subleases',
+    ]
     const renderSortByOptions = sortByOptions.map((option) => {
-        if (option.name == props.sortBy) {
+        if (option == props.sortBy) {
             return (
                 <button
-                    className="text-gray-500 bg-indigo-200 rounded-full p-2 font-black space-x-1 flex place-items-center"
-                    key={option.name}
+                    className="text-gray-500 bg-indigo-200 rounded-full p-2 font-black space-x-2 flex place-items-center"
+                    key={option}
                 >
-                    {option.svg}
-                    <div>{option.name}</div>
+                    {svgList[option as keyof svgList]}
+                    <div>{option}</div>
                 </button>
             )
         } else {
             return (
                 <button
                     className="text-gray-500 rounded-full p-2 font-black space-x-1 flex place-items-center hover:bg-gray-300"
-                    onClick={() => props.setSortBy(option.name)}
-                    key={option.name}
+                    onClick={() => props.setSortBy(option)}
+                    key={option}
                 >
-                    {option.svg}
-                    <div>{option.name}</div>
+                    {svgList[option as keyof svgList]}
+                    <div>{option}</div>
                 </button>
             )
         }
