@@ -1,5 +1,6 @@
 import React, { FunctionComponent, useState } from 'react'
 import CardContainer from './CardContainer'
+import HomepageHero from './HomepageHero'
 import SortBy from './SortBy'
 
 type Location = {
@@ -17,10 +18,13 @@ type HomeContentsProps = {
 const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
     const [sortBy, setSortBy] = useState('Popularity')
     return (
-        <div class="flex flex-col space-y-2 pt-20 bg-gray-200 mx-auto min-h-screen max-w-4xl lg:max-w-5xl xl:max-w-6xl">
-            <SortBy sortBy={sortBy} setSortBy={setSortBy} />
-            <CardContainer />
-        </div>
+        <>
+            <div class="flex flex-col space-y-2 pt-20 mx-auto min-h-screen">
+                <HomepageHero />
+                <SortBy sortBy={sortBy} setSortBy={setSortBy} />
+                <CardContainer />
+            </div>
+        </>
     )
 }
 export default HomeContents

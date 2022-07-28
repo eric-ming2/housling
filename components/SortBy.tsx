@@ -18,7 +18,10 @@ const SortBy: FunctionComponent<SortByProps> = (props) => {
     const renderSortByOptions = sortByOptions.map((option) => {
         if (option.name == props.sortBy) {
             return (
-                <button class="text-gray-500 bg-indigo-200 rounded-full p-2 font-black space-x-2 flex place-items-center">
+                <button
+                    className="text-gray-500 bg-indigo-200 rounded-full p-2 font-black space-x-2 flex place-items-center"
+                    key={option.name}
+                >
                     {option.svg}
                     <div>{option.name}</div>
                 </button>
@@ -26,8 +29,9 @@ const SortBy: FunctionComponent<SortByProps> = (props) => {
         } else {
             return (
                 <button
-                    class="text-gray-500 rounded-full p-2 font-black space-x-2 flex place-items-center hover:bg-gray-300"
+                    className="text-gray-500 rounded-full p-2 font-black space-x-2 flex place-items-center hover:bg-gray-300"
                     onClick={() => props.setSortBy(option.name)}
+                    key={option.name}
                 >
                     {option.svg}
                     <div>{option.name}</div>
@@ -38,9 +42,9 @@ const SortBy: FunctionComponent<SortByProps> = (props) => {
 
     return (
         <>
-            <div class="font-2xl font-medium pt-2">Sort By</div>
-            <div class="flex place-items-center justify-between border border-solid border-gray-400 bg-white p-4 rounded shadow">
-                <div class="flex space-x-1 lg:space-x-4">
+            <div className="font-2xl font-medium pt-2">Sort By</div>
+            <div className="flex place-items-center justify-between border border-solid border-gray-400 bg-white p-4 rounded shadow">
+                <div className="flex space-x-1 lg:space-x-4">
                     {renderSortByOptions}
                 </div>
             </div>
