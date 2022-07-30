@@ -15,16 +15,16 @@
             "rating": 3.4,
             "distance": {
                 "Walk": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 13,
+                    "crc": 22
                 },
                 "Bike": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 5,
+                    "crc": 7
                 },
                 "Car": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 3,
+                    "crc": 4
                 }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328343896205/TheStandard.jpeg",
@@ -45,16 +45,16 @@
             "rating": 2.2,
             "distance": {
                 "Walk": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 16,
+                    "crc": 24
                 },
                 "Bike": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 6,
+                    "crc": 8
                 },
                 "Car": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 4,
+                    "crc": 4
                 }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
@@ -75,16 +75,16 @@
             "rating": 2.2,
             "distance": {
                 "Walk": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 12,
+                    "crc": 20
                 },
                 "Bike": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 4,
+                    "crc": 6
                 },
                 "Car": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 3,
+                    "crc": 4
                 }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803859246301284/SQ5.jpeg",
@@ -105,16 +105,16 @@
             "rating": 2.2,
             "distance": {
                 "Walk": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 12,
+                    "crc": 16
                 },
                 "Bike": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 5,
+                    "crc": 5
                 },
                 "Car": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 3,
+                    "crc": 4
                 }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803858755559516/Inspire.jpeg",
@@ -136,15 +136,15 @@
             "distance": {
                 "Walk": {
                     "culc": 20,
-                    "crc": 30
+                    "crc": 16
                 },
                 "Bike": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 8,
+                    "crc": 5
                 },
                 "Car": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 6,
+                    "crc": 3
                 }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803858445172786/Catalyst.jpg",
@@ -165,19 +165,109 @@
             "rating": 4.5,
             "distance": {
                 "Walk": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 14,
+                    "crc": 22
                 },
                 "Bike": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 6,
+                    "crc": 8
                 },
                 "Car": {
-                    "culc": 20,
-                    "crc": 30
+                    "culc": 4,
+                    "crc": 5
                 }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328536838185/UHouse.webp",
+            "website": "www.google.com"
+        },
+        {
+            "name": "HereAtlanta",
+            "bed": {
+                "studio": false,
+                "min": 1,
+                "max": 5
+            },
+            "price": {
+                "soldOut": false,
+                "min": "2,000",
+                "max": "3,000"
+            },
+            "rating": 4.5,
+            "distance": {
+                "Walk": {
+                    "culc": 15,
+                    "crc": 22
+                },
+                "Bike": {
+                    "culc": 5,
+                    "crc": 7
+                },
+                "Car": {
+                    "culc": 4,
+                    "crc": 4
+                }
+            },
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002830248263557200/Here.webp",
+            "website": "www.google.com"
+        },
+        {
+            "name": "100Midtown",
+            "bed": {
+                "studio": false,
+                "min": 1,
+                "max": 5
+            },
+            "price": {
+                "soldOut": false,
+                "min": "2,000",
+                "max": "3,000"
+            },
+            "rating": 4.5,
+            "distance": {
+                "Walk": {
+                    "culc": 16,
+                    "crc": 22
+                },
+                "Bike": {
+                    "culc": 6,
+                    "crc": 8
+                },
+                "Car": {
+                    "culc": 4,
+                    "crc": 4
+                }
+            },
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002830247730888734/100Midtown.jpg",
+            "website": "www.google.com"
+        },
+        {
+            "name": "Camden Midtown",
+            "bed": {
+                "studio": false,
+                "min": 1,
+                "max": 5
+            },
+            "price": {
+                "soldOut": false,
+                "min": "2,000",
+                "max": "3,000"
+            },
+            "rating": 4.5,
+            "distance": {
+                "Walk": {
+                    "culc": 28,
+                    "crc": 32
+                },
+                "Bike": {
+                    "culc": 12,
+                    "crc": 12
+                },
+                "Car": {
+                    "culc": 5,
+                    "crc": 6
+                }
+            },
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002830247948988426/CamdenMidtown.webp",
             "website": "www.google.com"
         }
     ]
