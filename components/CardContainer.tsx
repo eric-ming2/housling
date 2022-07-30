@@ -8,7 +8,7 @@ const CardContainer: FunctionComponent = () => {
     ))
 
     return (
-        <div className="grid grid-cols-2 gap-10 relative m-10 mt-5">
+        <div className="flex flex-wrap justify-center gap-10 relative m-10 mt-5">
             {locationCards}
         </div>
     )

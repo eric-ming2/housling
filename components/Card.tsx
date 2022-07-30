@@ -17,29 +17,30 @@ type CardProps = {
 }
 
 const Card: FunctionComponent<CardProps> = (props) => {
+    const location = props.location
+    const roomData = location.bed.studio
+        ? `Studio - ${location.bed.max} beds`
+        : `${location.bed.min}-${location.bed.max} beds`
+    const priceData = location.price.soldOut
+        ? 'SOLD OUT'
+        : `\$${location.price.min}-\$${location.price.max}`
+    const roomAndPriceData = `${roomData} | ${priceData}`
     return (
         <a
             href="#"
-            class="flex flex-col items-center h-50
-    bg-white rounded-lg border shadow-md
-    md:flex-row hover:bg-gray-100
-     justify-self-center"
+            class="flex flex-col h-50
+    bg-white rounded-lg border shadow-md min-w-[600px]    md:flex-row hover:bg-gray-100"
         >
             <div class="w-full h-max rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg relative overflow-hidden">
-                <Image
-                    src={props.location.image}
-                    layout="fill"
-                    objectFit="cover"
-                />
+                <Image src={location.image} layout="fill" objectFit="cover" />
             </div>
-            <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="text-2xl font-bold tracking-tight text-gray-900">
-                    {props.location.name}
+            <div class="flex flex-col justify-between px-16 pt-8 pb-16 leading-normal">
+                <h5 class="text-4xl font-bold tracking-tight text-gray-900">
+                    {location.name}
                 </h5>
-                <Rating rating={props.location.rating} />
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                <Rating rating={location.rating} />
+                <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400">
+                    {roomAndPriceData}
                 </p>
             </div>
         </a>

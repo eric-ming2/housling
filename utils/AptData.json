@@ -2,28 +2,121 @@
     "location": [
         {
             "name": "The Standard",
-            "price": 2000,
+            "bed": {
+                "studio": true,
+                "min": 1,
+                "max": 5
+            },
+            "price": {
+                "soldOut": false,
+                "min": "2,000",
+                "max": "3,000"
+            },
             "rating": 3.4,
-            "distanceCulc": 20,
-            "distanceCrc": 30,
+            "distance": {
+                "culc": 20,
+                "crc": 30
+            },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328343896205/TheStandard.jpeg",
             "website": "www.google.com"
         },
         {
             "name": "The Mark",
-            "price": 2200,
+            "bed": {
+                "studio": true,
+                "min": 1,
+                "max": 6
+            },
+            "price": {
+                "soldOut": true,
+                "min": "2,000",
+                "max": "3,000"
+            },
             "rating": 2.2,
-            "distanceCulc": 10,
-            "distanceCrc": 30,
+            "distance": {
+                "culc": 20,
+                "crc": 30
+            },
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
+            "website": "www.google.com"
+        },
+        {
+            "name": "SQ5",
+            "bed": {
+                "studio": true,
+                "min": 1,
+                "max": 6
+            },
+            "price": {
+                "soldOut": true,
+                "min": "2,000",
+                "max": "3,000"
+            },
+            "rating": 2.2,
+            "distance": {
+                "culc": 20,
+                "crc": 30
+            },
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
+            "website": "www.google.com"
+        },
+        {
+            "name": "Inspire",
+            "bed": {
+                "studio": true,
+                "min": 1,
+                "max": 6
+            },
+            "price": {
+                "soldOut": true,
+                "min": "2,000",
+                "max": "3,000"
+            },
+            "rating": 2.2,
+            "distance": {
+                "culc": 20,
+                "crc": 30
+            },
+            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
+            "website": "www.google.com"
+        },
+        {
+            "name": "Catalyst",
+            "bed": {
+                "studio": true,
+                "min": 1,
+                "max": 6
+            },
+            "price": {
+                "soldOut": true,
+                "min": "2,000",
+                "max": "3,000"
+            },
+            "rating": 2.2,
+            "distance": {
+                "culc": 20,
+                "crc": 30
+            },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
             "website": "www.google.com"
         },
         {
             "name": "UHouse",
-            "price": 1200,
+            "bed": {
+                "studio": false,
+                "min": 1,
+                "max": 5
+            },
+            "price": {
+                "soldOut": false,
+                "min": "2,000",
+                "max": "3,000"
+            },
             "rating": 4.5,
-            "distanceCulc": 20,
-            "distanceCrc": 30,
+            "distance": {
+                "culc": 20,
+                "crc": 30
+            },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328536838185/UHouse.webp",
             "website": "www.google.com"
         }
