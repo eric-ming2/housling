@@ -14,8 +14,18 @@
             },
             "rating": 3.4,
             "distance": {
-                "culc": 20,
-                "crc": 30
+                "Walk": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Bike": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Car": {
+                    "culc": 20,
+                    "crc": 30
+                }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328343896205/TheStandard.jpeg",
             "website": "www.google.com"
@@ -34,8 +44,18 @@
             },
             "rating": 2.2,
             "distance": {
-                "culc": 20,
-                "crc": 30
+                "Walk": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Bike": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Car": {
+                    "culc": 20,
+                    "crc": 30
+                }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
             "website": "www.google.com"
@@ -54,8 +74,18 @@
             },
             "rating": 2.2,
             "distance": {
-                "culc": 20,
-                "crc": 30
+                "Walk": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Bike": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Car": {
+                    "culc": 20,
+                    "crc": 30
+                }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803859246301284/SQ5.jpeg",
             "website": "www.google.com"
@@ -74,8 +104,18 @@
             },
             "rating": 2.2,
             "distance": {
-                "culc": 20,
-                "crc": 30
+                "Walk": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Bike": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Car": {
+                    "culc": 20,
+                    "crc": 30
+                }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803858755559516/Inspire.jpeg",
             "website": "www.google.com"
@@ -94,8 +134,18 @@
             },
             "rating": 2.2,
             "distance": {
-                "culc": 20,
-                "crc": 30
+                "Walk": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Bike": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Car": {
+                    "culc": 20,
+                    "crc": 30
+                }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803858445172786/Catalyst.jpg",
             "website": "www.google.com"
@@ -114,8 +164,18 @@
             },
             "rating": 4.5,
             "distance": {
-                "culc": 20,
-                "crc": 30
+                "Walk": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Bike": {
+                    "culc": 20,
+                    "crc": 30
+                },
+                "Car": {
+                    "culc": 20,
+                    "crc": 30
+                }
             },
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328536838185/UHouse.webp",
             "website": "www.google.com"
