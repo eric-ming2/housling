@@ -71,19 +71,18 @@ const Card: FunctionComponent<CardProps> = (props) => {
     return (
         <a
             href="#"
-            className="flex flex-col h-50
-    bg-white rounded-lg border shadow-md min-w-[600px]    md:flex-row hover:bg-gray-100"
+            className="flex flex-col h-50 bg-white rounded-lg border shadow-md w-[600px] md:flex-row hover:bg-gray-100"
         >
-            <div className="w-full h-max rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg relative overflow-hidden">
+            <div className="rounded-t-lg h-full w-60 md:rounded-none md:rounded-l-lg relative overflow-hidden">
                 <Image src={location.image} layout="fill" objectFit="cover" />
             </div>
             <div className="flex flex-col w-full">
-                <div className="flex flex-col justify-between px-16 py-8 leading-normal">
+                <div className="flex flex-col justify-between px-12 py-8  w-auto">
                     <h5 className="text-4xl font-bold tracking-tight text-gray-900">
                         {location.name}
                     </h5>
                     <Rating rating={location.rating} />
-                    <div className="mb-3 font-normal text-lg text-gray-700">
+                    <div className="font-normal text-lg text-gray-700">
                         {getRoomAndPriceData()}
                         {getTransportationData}
                     </div>

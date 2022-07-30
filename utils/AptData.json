@@ -104,7 +104,7 @@
                 "max": 6
             },
             "price": {
-                "soldOut": true,
+                "soldOut": false,
                 "min": "2,000",
                 "max": "3,000"
             },
@@ -285,7 +285,7 @@
             },
             "reviewCount": 5,
             "subleaseCount": 2,
-            "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002830247948988426/CamdenMidtown.webp",
+            "image": "https://media.discordapp.net/attachments/835404318655119390/1002864026402955365/CamdenMidtown2.jpg",
             "website": "www.google.com"
         }
     ]
