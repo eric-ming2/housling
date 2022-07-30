@@ -20,9 +20,9 @@ const Rating: FunctionComponent<RatingProps> = (props) => {
         return stars
     }
     return (
-        <div class="flex items-center mb-2">
+        <div className="flex items-center mb-2">
             {renderStars()}
-            <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+            <p className="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">
                 {props.rating} out of 5
             </p>
         </div>

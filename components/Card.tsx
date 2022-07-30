@@ -32,11 +32,11 @@ const Card: FunctionComponent<CardProps> = (props) => {
 
     const getTransportationData = (
         <div className="mt-3">
-            <div className="flex space-x-1">
+            <div className="flex space-x-1 items-center">
                 {svgList[props.transportation]}
-                <p>
+                <div className="h-min">
                     to CULC: {location.distance[props.transportation].culc} min
-                </p>
+                </div>
             </div>
             <div className="flex space-x-1">
                 {svgList[props.transportation]}
@@ -45,24 +45,50 @@ const Card: FunctionComponent<CardProps> = (props) => {
         </div>
     )
 
+    const getReviewSubleaseData = (
+        <div className="grid place-items-center p-3 text-indigo-500 w-full border-t border-gray-300">
+            <div className="flex flex-row items-center w-auto">
+                <div>
+                    {' '}
+                    See all {location.reviewCount} reviews and{' '}
+                    {location.subleaseCount} subleases
+                </div>
+                <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-4 h-4 ml-1"
+                    viewBox="0 0 24 24"
+                >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </div>
+        </div>
+    )
+
     return (
         <a
             href="#"
-            class="flex flex-col h-50
+            className="flex flex-col h-50
     bg-white rounded-lg border shadow-md min-w-[600px]    md:flex-row hover:bg-gray-100"
         >
-            <div class="w-full h-max rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg relative overflow-hidden">
+            <div className="w-full h-max rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg relative overflow-hidden">
                 <Image src={location.image} layout="fill" objectFit="cover" />
             </div>
-            <div class="flex flex-col justify-between px-16 py-8 leading-normal">
-                <h5 class="text-4xl font-bold tracking-tight text-gray-900">
-                    {location.name}
-                </h5>
-                <Rating rating={location.rating} />
-                <div class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400">
-                    {getRoomAndPriceData()}
-                    {getTransportationData}
+            <div className="flex flex-col w-full">
+                <div className="flex flex-col justify-between px-16 py-8 leading-normal">
+                    <h5 className="text-4xl font-bold tracking-tight text-gray-900">
+                        {location.name}
+                    </h5>
+                    <Rating rating={location.rating} />
+                    <div className="mb-3 font-normal text-lg text-gray-700">
+                        {getRoomAndPriceData()}
+                        {getTransportationData}
+                    </div>
                 </div>
+                {getReviewSubleaseData}
             </div>
         </a>
     )

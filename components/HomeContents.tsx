@@ -22,7 +22,7 @@ const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
     const [transportation, setTransportation] = useState('Walk')
     return (
         <>
-            <div class="flex flex-col mx-auto min-h-screen">
+            <div className="flex flex-col mx-auto min-h-screen">
                 <HomepageHero />
 
                 <div className="text-5xl py-10 font-bold font-color-black self-center">
