@@ -26,7 +26,7 @@ const SortBy: FunctionComponent<SortByProps> = (props) => {
         if (option == props.sortBy) {
             return (
                 <button
-                    className="text-gray-500 bg-indigo-200 rounded-full p-2 font-black space-x-2 flex place-items-center"
+                    className="text-gray-500 bg-indigo-200 rounded-full p-2 font-black space-x-1 flex place-items-center"
                     key={option}
                 >
                     {svgList[option as keyof svgList]}
