@@ -5,7 +5,7 @@ const HomepageHero: FunctionComponent = () => (
     <div className="flex w-full min-h-[50vh]">
         <div className="blur-sm w-full min-h-full overflow-hidden relative z-0">
             <Image
-                src="https://cdn.discordapp.com/attachments/835404318655119390/1002053224028708884/image.jpg"
+                src="https://cdn.discordapp.com/attachments/835404318655119390/1002802861694005380/HomepageHero.jpg"
                 layout="fill"
                 objectFit="cover"
             />
