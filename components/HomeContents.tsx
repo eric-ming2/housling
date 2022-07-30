@@ -35,7 +35,10 @@ const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
                         setTransportation={setTransportation}
                     />
                 </div>
-                <CardContainer transportation={transportation} />
+                <CardContainer
+                    transportation={transportation}
+                    sortBy={sortBy}
+                />
 
                 <Footer />
             </div>
