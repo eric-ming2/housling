@@ -3,6 +3,7 @@
         {
             "name": "The Standard",
             "price": 2000,
+            "rating": 3.4,
             "distanceCulc": 20,
             "distanceCrc": 30,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328343896205/TheStandard.jpeg",
@@ -11,6 +12,7 @@
         {
             "name": "The Mark",
             "price": 2200,
+            "rating": 2.2,
             "distanceCulc": 10,
             "distanceCrc": 30,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
@@ -19,6 +21,7 @@
         {
             "name": "UHouse",
             "price": 1200,
+            "rating": 4.5,
             "distanceCulc": 20,
             "distanceCrc": 30,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328536838185/UHouse.webp",

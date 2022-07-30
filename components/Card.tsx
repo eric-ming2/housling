@@ -1,9 +1,11 @@
 import React, { FunctionComponent } from 'react'
 import Image from 'next/image'
+import Rating from './Rating'
 
 type Location = {
     name: string
     price: string
+    rating: number
     distanceCulc: number
     distanceCrc: number
     image: string
@@ -31,9 +33,10 @@ const Card: FunctionComponent<CardProps> = (props) => {
                 />
             </div>
             <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                <h5 class="text-2xl font-bold tracking-tight text-gray-900">
                     {props.location.name}
                 </h5>
+                <Rating rating={props.location.rating} />
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Here are the biggest enterprise technology acquisitions of
                     2021 so far, in reverse chronological order.
