@@ -1,8 +1,7 @@
 import React, { FunctionComponent } from 'react'
-import svgList from '../utils/Svgs'
 
 const Header: FunctionComponent = () => (
-    <div className="fixed top-0 z-50 w-full bg-white">
+    <div className="z-50 w-full bg-white">
         <nav className="text-gray-600 body-font">
             <div className="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
                 <a className="flex items-center mb-2 font-medium text-gray-900 title-font md:mb-0">

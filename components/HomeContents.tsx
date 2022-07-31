@@ -5,19 +5,7 @@ import HomepageHero from './HomepageHero'
 import SortBy from './SortBy'
 import Transportation from './Transportation'
 
-type Location = {
-    name: string
-    price: string
-    distanceCulc: number
-    distanceCrc: number
-    website: string
-}
-
-type HomeContentsProps = {
-    location: Location
-}
-
-const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
+const HomeContents: FunctionComponent = () => {
     const [sortBy, setSortBy] = useState('Popularity')
     const [transportation, setTransportation] = useState('Walk')
     return (
