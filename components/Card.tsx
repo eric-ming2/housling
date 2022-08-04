@@ -70,7 +70,7 @@ const Card: FunctionComponent<CardProps> = (props) => {
 
     return (
         <a
-            href="#"
+            href={`/apartments/${location.name}`}
             className="flex flex-col h-50 bg-white rounded-lg border shadow-md w-[600px] md:flex-row hover:bg-gray-100"
         >
             <div className="rounded-t-lg h-full w-60 md:rounded-none md:rounded-l-lg relative overflow-hidden">
