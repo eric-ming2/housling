@@ -1,12 +1,12 @@
 import React, { FunctionComponent, useEffect } from 'react'
 import AptData from '../utils/AptData.json'
-import Card from '../components/Card'
+import Card from './Card'
 
 type CardContainerProps = {
     sortBy: string
     transportation: string
 }
-const CardContainer: FunctionComponent = (props) => {
+const CardContainer: FunctionComponent<CardContainerProps> = (props) => {
     useEffect(() => {
         renderLocationCards()
     }, [props])
