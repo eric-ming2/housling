@@ -4,7 +4,7 @@ import Footer from './Footer'
 import HomepageHero from './HomepageHero'
 import SortBy from './SortBy'
 import Transportation from './Transportation'
-import { SiteData } from '../types/types'
+import { SiteData, Distance } from '../types/types'
 
 type HomeContentsProps = {
     siteData: SiteData
@@ -12,7 +12,7 @@ type HomeContentsProps = {
 
 const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
     const [sortBy, setSortBy] = useState('Popularity')
-    const [transportation, setTransportation] = useState('Walk')
+    const [transportation, setTransportation] = useState('Walk' as keyof Distance)
     return (
         <>
             <div className="flex flex-col mx-auto min-h-screen">

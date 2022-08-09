@@ -1,4 +1,8 @@
-const svgList = {
+import { ReactElement } from 'react'
+type svgList = {
+    [index: string]: ReactElement
+}
+const svgList: svgList = {
     Popularity: (
         <svg
             className="h-8 w-8 text-gray-500"

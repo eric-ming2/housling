@@ -1,4 +1,4 @@
-export default function (req, res) {
+export default function (req: any, res: any) {
     let nodemailer = require('nodemailer')
     console.log(req.body)
     let transporter = nodemailer.createTransport({
@@ -18,7 +18,7 @@ export default function (req, res) {
         subject: 'Housling email from : ' + req.body.name,
         text: req.body.email + req.body.message,
     }
-    transporter.sendMail(mailOptions, function (err, info) {
+    transporter.sendMail(mailOptions, function (err: any, info: any) {
         if (err) console.log(err)
         else console.log(info)
     })

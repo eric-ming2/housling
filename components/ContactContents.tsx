@@ -5,7 +5,7 @@ const ContactContents: FunctionComponent = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
         setSubmitted(true)
         console.log('Sending')
@@ -169,8 +169,6 @@ const ContactContents: FunctionComponent = () => {
                         className="absolute inset-0 opacity-40 grayscale contrast-125 "
                         frameBorder="0"
                         title="map"
-                        marginHeight="0"
-                        marginWidth="0"
                         scrolling="no"
                         src="https://maps.google.com/maps?q=Georgia%20Institute%20of%20Technology&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     ></iframe>

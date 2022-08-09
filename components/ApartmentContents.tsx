@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useState } from 'react'
 
 type ApartmentProps = {
-    aptId: string
+    aptId: string | string[] | undefined
 }
 const ApartmentContents: FunctionComponent<ApartmentProps> = (props) => {
     return (

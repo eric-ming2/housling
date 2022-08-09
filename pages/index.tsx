@@ -1,7 +1,8 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import Header from '../components/Header'
 import HomeContents from '../components/HomeContents'
 import prisma from '../lib/prisma'
+import { SiteData } from '../types/types'
 
 export const getStaticProps: GetStaticProps = async () => {
     let aptData = await prisma.apartment.findMany()
@@ -24,7 +25,7 @@ export const getStaticProps: GetStaticProps = async () => {
     }
 }
 
-const Home: NextPage = ({ siteData }) => {
+const Home: NextPage<SiteData> = ({ siteData }) => {
     return (
         <div className="flex flex-col h-screen">
             <Header />

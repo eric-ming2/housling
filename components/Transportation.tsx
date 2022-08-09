@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import svgList from '../utils/Svgs'
+import { Distance } from '../types/types'
 
 type TransportationProps = {
     transportation: string
@@ -7,6 +8,7 @@ type TransportationProps = {
 }
 
 const Transportation: FunctionComponent<TransportationProps> = (props) => {
+    // Todo: hardcoding an array of options here is gross
     const transportationOptions: string[] = ['Walk', 'Bike', 'Car']
     const renderTransportationOptions = transportationOptions.map((option) => {
         if (option == props.transportation) {
@@ -15,7 +17,7 @@ const Transportation: FunctionComponent<TransportationProps> = (props) => {
                     className="text-gray-500 bg-indigo-200 rounded-full p-2 font-black space-x-1 flex place-items-center"
                     key={option}
                 >
-                    {svgList[option as keyof svgList]}
+                    {svgList[option]}
                     <div>{option}</div>
                 </button>
             )
@@ -23,10 +25,10 @@ const Transportation: FunctionComponent<TransportationProps> = (props) => {
             return (
                 <button
                     className="text-gray-500 rounded-full p-2 font-black space-x-1 flex place-items-center hover:bg-gray-300"
-                    onClick={() => props.setTransportation(option)}
+                    onClick={() => props.setTransportation(option as keyof Distance)}
                     key={option}
                 >
-                    {svgList[option as keyof svgList]}
+                    {svgList[option]}
                     <div>{option}</div>
                 </button>
             )
