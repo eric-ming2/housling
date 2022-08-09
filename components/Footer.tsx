@@ -24,6 +24,7 @@ const Footer: FunctionComponent = () => (
                         className="text-gray-500"
                         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <svg
                             fill="currentColor"
@@ -40,6 +41,7 @@ const Footer: FunctionComponent = () => (
                         className="ml-3 text-gray-500"
                         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <svg
                             fill="currentColor"
@@ -56,6 +58,7 @@ const Footer: FunctionComponent = () => (
                         className="ml-3 text-gray-500"
                         href="https://www.instagram.com/riceming24/?r=nametag"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <svg
                             fill="none"
@@ -81,6 +84,7 @@ const Footer: FunctionComponent = () => (
                         className="ml-3 text-gray-500"
                         href="https://www.linkedin.com/in/eric-ming"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <svg
                             fill="currentColor"

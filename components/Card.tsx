@@ -67,7 +67,7 @@ const Card: FunctionComponent<CardProps> = (props) => {
             className="flex flex-col h-50 bg-white rounded-lg border shadow-md w-[600px] md:flex-row hover:bg-gray-100"
         >
             <div className="rounded-t-lg h-full w-60 md:rounded-none md:rounded-l-lg relative overflow-hidden">
-                <Image src={location.image} layout="fill" objectFit="cover" />
+                <Image src={location.image} layout="fill" objectFit="cover" alt={location.name} />
             </div>
             <div className="flex flex-col w-full">
                 <div className="flex flex-col justify-between px-12 py-8  w-auto">

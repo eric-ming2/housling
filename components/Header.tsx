@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import Link from 'next/link'
 
 const Header: FunctionComponent = () => (
     <div className="z-50 w-full bg-white">
@@ -21,13 +22,15 @@ const Header: FunctionComponent = () => (
                     <span className="ml-3 text-xl">Housling</span>
                 </a>
                 <nav className="flex flex-wrap items-center justify-center text-base md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400">
-                    <a className="mr-5 hover:text-gray-900" href="/">
-                        Home
-                    </a>
-                    <a className="mr-5 hover:text-gray-900" href="contact">
-                        Contact
-                    </a>
-                    <a className="mr-5 hover:text-gray-900">About</a>
+                    <Link href="/">
+                        <a className="mr-5 hover:text-gray-900">Home</a>
+                    </Link>
+                    <Link href="contact">
+                        <a className="mr-5 hover:text-gray-900">Contact</a>
+                    </Link>
+                    <Link href="about">
+                        <a className="mr-5 hover:text-gray-900">About</a>
+                    </Link>
                 </nav>
                 <button className="inline-flex items-center px-3 py-1 mx-4 mt-4 text-base bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200 md:mt-0">
                     Post a Sublease

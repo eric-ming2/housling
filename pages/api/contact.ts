@@ -1,4 +1,4 @@
-export default function (req: any, res: any) {
+const contactAPI = (req: any, res: any) => {
     let nodemailer = require('nodemailer')
     console.log(req.body)
     let transporter = nodemailer.createTransport({
@@ -25,3 +25,5 @@ export default function (req: any, res: any) {
     console.log('exiting api')
     res.status(200)
 }
+
+export default contactAPI

@@ -16,11 +16,6 @@ type CardContainerProps = {
     siteData: SiteData
 }
 const CardContainer: FunctionComponent<CardContainerProps> = (props) => {
-    useEffect(() => {
-        countReviews() //Redundant code, optimize later?
-        renderLocationCards()
-    }, [props])
-
     var locationCards = props.siteData.aptData
     var reviewCount = new Map()
     var subleaseCount = new Map()

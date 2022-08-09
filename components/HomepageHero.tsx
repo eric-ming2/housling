@@ -10,6 +10,7 @@ const HomepageHero: FunctionComponent = () => (
                 src="https://cdn.discordapp.com/attachments/835404318655119390/1002802861694005380/HomepageHero.jpg"
                 layout="fill"
                 objectFit="cover"
+                alt=""
             />
         </div>
         <div className="absolute grid place-items-center text-white z-0 h-full w-full">
