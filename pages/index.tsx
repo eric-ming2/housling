@@ -4,24 +4,31 @@ import HomeContents from '../components/HomeContents'
 import prisma from '../lib/prisma'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const aptData = await prisma.apartment.findMany();
-  const cleanedData = aptData.map((apt) => ({
-      ...apt,
-      rating: apt.rating.toNumber()
-  }))
-  console.log(cleanedData)
-  return {
-    props: { cleanedData },
-    revalidate: 10,
-  };
-};
+    let aptData = await prisma.apartment.findMany()
+    let reviewData = await prisma.review.findMany()
+    let subleaseData = await prisma.sublease.findMany()
+    const cleanedAptData = aptData.map((apt) => ({
+        ...apt,
+        rating: apt.rating.toNumber(),
+    }))
+    const cleanedReviewData = JSON.parse(JSON.stringify(reviewData))
+    const cleanedSubleaseData = JSON.parse(JSON.stringify(subleaseData))
+    const siteData = {
+        reviews: cleanedReviewData,
+        subleases: cleanedSubleaseData,
+        aptData: cleanedAptData,
+    }
+    return {
+        props: { siteData },
+        revalidate: 10,
+    }
+}
 
-const Home: NextPage = ({ cleanedData }) => {
-    console.log(cleanedData)
+const Home: NextPage = ({ siteData }) => {
     return (
         <div className="flex flex-col h-screen">
             <Header />
-            <HomeContents />
+            <HomeContents siteData={siteData} />
         </div>
     )
 }

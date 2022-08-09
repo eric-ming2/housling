@@ -2,31 +2,24 @@ import React, { FunctionComponent } from 'react'
 import Image from 'next/image'
 import Rating from './Rating'
 import svgList from '../utils/Svgs'
-
-type Location = {
-    name: string
-    price: string
-    rating: number
-    distanceCulc: number
-    distanceCrc: number
-    image: string
-    website: string
-}
+import { Apartment, Distance } from '../types/types'
 
 type CardProps = {
-    location: Location
-    transportation: string
+    location: Apartment
+    transportation: keyof Distance
+    reviewCount: number
+    subleaseCount: number
 }
 
 const Card: FunctionComponent<CardProps> = (props) => {
     const location = props.location
     const getRoomAndPriceData = () => {
-        const roomData = location.bed.studio
-            ? `Studio - ${location.bed.max} beds`
-            : `${location.bed.min}-${location.bed.max} beds`
-        const priceData = location.price.soldOut
+        const roomData = location.bedStudio
+            ? `Studio - ${location.bedMax} beds`
+            : `${location.bedMin}-${location.bedMax} beds`
+        const priceData = location.soldOut
             ? 'SOLD OUT'
-            : `\$${location.price.min}-\$${location.price.max}`
+            : `\$${location.priceMin}-\$${location.priceMax}`
         return `${roomData} | ${priceData}`
     }
 
@@ -50,8 +43,8 @@ const Card: FunctionComponent<CardProps> = (props) => {
             <div className="flex flex-row items-center w-auto">
                 <div>
                     {' '}
-                    See all {location.reviewCount} reviews and{' '}
-                    {location.subleaseCount} subleases
+                    See all {props.reviewCount} reviews and{' '}
+                    {props.subleaseCount} subleases
                 </div>
                 <svg
                     fill="none"

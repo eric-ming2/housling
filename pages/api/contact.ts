@@ -1,8 +1,6 @@
 export default function (req, res) {
     let nodemailer = require('nodemailer')
     console.log(req.body)
-    console.log(process.env.MAIL_USERNAME)
-    console.log(process.env)
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {

@@ -62,7 +62,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328163549194/TheMark.jpeg",
-            "website": "www.google.com"
+            "website": "https://themarkatlanta.landmark-properties.com"
         },
         {
             "name": "SQ5",
@@ -94,7 +94,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803859246301284/SQ5.jpeg",
-            "website": "www.google.com"
+            "website": "https://www.squareonfifth.com/"
         },
         {
             "name": "Inspire",
@@ -126,7 +126,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803858755559516/Inspire.jpeg",
-            "website": "www.google.com"
+            "website": "https://www.liveatinspireatl.com/"
         },
         {
             "name": "Catalyst",
@@ -158,7 +158,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002803858445172786/Catalyst.jpg",
-            "website": "www.google.com"
+            "website": "https://www.apartmenthomeliving.com/apartment-finder/Catalyst-Atlanta-GA-30318-13117688"
         },
         {
             "name": "UHouse",
@@ -190,7 +190,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002076328536838185/UHouse.webp",
-            "website": "www.google.com"
+            "website": "https://uhmidtown.com/"
         },
         {
             "name": "HereAtlanta",
@@ -222,7 +222,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002830248263557200/Here.webp",
-            "website": "www.google.com"
+            "website": "https://www.livehereatlanta.com/"
         },
         {
             "name": "100Midtown",
@@ -254,7 +254,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://cdn.discordapp.com/attachments/835404318655119390/1002830247730888734/100Midtown.jpg",
-            "website": "www.google.com"
+            "website": "https://www.100midtown.com/"
         },
         {
             "name": "Camden Midtown",
@@ -286,7 +286,7 @@
             "reviewCount": 5,
             "subleaseCount": 2,
             "image": "https://media.discordapp.net/attachments/835404318655119390/1002864026402955365/CamdenMidtown2.jpg",
-            "website": "www.google.com"
+            "website": "https://www.apartmentguide.com/apartments/Georgia/Atlanta/Camden-Midtown-Atlanta/21551/"
         }
     ]
 }

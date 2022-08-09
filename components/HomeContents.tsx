@@ -4,8 +4,13 @@ import Footer from './Footer'
 import HomepageHero from './HomepageHero'
 import SortBy from './SortBy'
 import Transportation from './Transportation'
+import { SiteData } from '../types/types'
 
-const HomeContents: FunctionComponent = () => {
+type HomeContentsProps = {
+    siteData: SiteData
+}
+
+const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
     const [sortBy, setSortBy] = useState('Popularity')
     const [transportation, setTransportation] = useState('Walk')
     return (
@@ -26,6 +31,7 @@ const HomeContents: FunctionComponent = () => {
                 <CardContainer
                     transportation={transportation}
                     sortBy={sortBy}
+                    siteData = {props.siteData}
                 />
 
                 <Footer />
