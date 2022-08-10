@@ -11,7 +11,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const cleanedAptData = aptData.map((apt) => ({
         ...apt,
         rating: apt.rating.toNumber(),
-        distance: apt.distance as Distance
+        distance: apt.distance as Distance,
     }))
     const cleanedReviewData = JSON.parse(JSON.stringify(reviewData))
     const cleanedSubleaseData = JSON.parse(JSON.stringify(subleaseData))
@@ -29,9 +29,11 @@ export const getStaticProps: GetStaticProps = async () => {
 //Todo: probably a disgusting use of any
 const Home: NextPage<any> = ({ siteData }) => {
     return (
-        <div className="flex flex-col h-screen">
-            <Header />
-            <HomeContents siteData={siteData} />
+        <div className="absolute inset-0 w-[200%] md:w-full">
+            <div className="flex flex-col">
+                <Header />
+                <HomeContents siteData={siteData} />
+            </div>
         </div>
     )
 }

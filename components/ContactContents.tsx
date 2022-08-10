@@ -27,6 +27,9 @@ const ContactContents: FunctionComponent = () => {
             console.log('Response received')
             if (res.status === 200) {
                 console.log('Response succeeded!')
+            } else {
+                console.log("Email failed. Response: ")
+                console.log(res)
             }
         })
     }
