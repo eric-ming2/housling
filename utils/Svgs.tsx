@@ -26,6 +26,29 @@ const svgList: svgList = {
             />
         </svg>
     ),
+    LargePopularity: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
+            />
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
+            />
+        </svg>
+    ),
     Price: (
         <svg
             className="h-8 w-8 text-gray-500"
@@ -45,11 +68,47 @@ const svgList: svgList = {
             <path d="M12 6v2m0 8v2" />
         </svg>
     ),
+    LargePrice: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            {' '}
+            <path stroke="none" d="M0 0h24v24H0z" />{' '}
+            <circle cx="12" cy="12" r="9" />{' '}
+            <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />{' '}
+            <path d="M12 6v2m0 8v2" />
+        </svg>
+    ),
     Rating: (
         <svg
             className="h-8 w-8 text-gray-500"
             width="24"
             height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            />
+        </svg>
+    ),
+    LargeRating: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -85,11 +144,53 @@ const svgList: svgList = {
             />
         </svg>
     ),
+    LargeDistance: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            />
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+        </svg>
+    ),
     Subleases: (
         <svg
             className="h-8 w-8 text-gray-500"
             width="24"
             height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            {' '}
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />{' '}
+            <line x1="16" y1="2" x2="16" y2="6" />{' '}
+            <line x1="8" y1="2" x2="8" y2="6" />{' '}
+            <line x1="3" y1="10" x2="21" y2="10" />
+        </svg>
+    ),
+    LargeSubleases: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -165,6 +266,22 @@ const svgList: svgList = {
             <path d="M13.978 12.27c.245.368.611.647 1.031.787l2.675.892.633-1.896-2.675-.892-1.663-2.495a2.016 2.016 0 0 0-.769-.679l-1.434-.717a1.989 1.989 0 0 0-1.378-.149l-3.193.797a2.002 2.002 0 0 0-1.306 1.046l-1.794 3.589 1.789.895 1.794-3.589 2.223-.556-1.804 8.346-3.674 2.527 1.133 1.648 3.675-2.528c.421-.29.713-.725.82-1.225l.517-2.388 2.517 1.888.925 4.625 1.961-.393-.925-4.627a2 2 0 0 0-.762-1.206l-2.171-1.628.647-3.885 1.208 1.813z" />
         </svg>
     ),
+    LargeWalk: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <circle cx="13" cy="4" r="2" />
+            <path d="M13.978 12.27c.245.368.611.647 1.031.787l2.675.892.633-1.896-2.675-.892-1.663-2.495a2.016 2.016 0 0 0-.769-.679l-1.434-.717a1.989 1.989 0 0 0-1.378-.149l-3.193.797a2.002 2.002 0 0 0-1.306 1.046l-1.794 3.589 1.789.895 1.794-3.589 2.223-.556-1.804 8.346-3.674 2.527 1.133 1.648 3.675-2.528c.421-.29.713-.725.82-1.225l.517-2.388 2.517 1.888.925 4.625 1.961-.393-.925-4.627a2 2 0 0 0-.762-1.206l-2.171-1.628.647-3.885 1.208 1.813z" />
+        </svg>
+    ),
     Bike: (
         <svg
             className="h-8 w-8 text-gray-500"
@@ -184,11 +301,30 @@ const svgList: svgList = {
             <circle cx="17" cy="5" r="1" />
         </svg>
     ),
+    LargeBike: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            {' '}
+            <path stroke="none" d="M0 0h24v24H0z" />{' '}
+            <circle cx="5" cy="18" r="3" /> <circle cx="19" cy="18" r="3" />{' '}
+            <polyline points="12 19 12 15 9 12 14 8 16 11 19 11" />{' '}
+            <circle cx="17" cy="5" r="1" />
+        </svg>
+    ),
     Car: (
         <svg
             className="h-8 w-8 text-gray-500"
-            width="24"
-            height="24"
+            width="48"
+            height="48"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
@@ -200,6 +336,41 @@ const svgList: svgList = {
             <path stroke="none" d="M0 0h24v24H0z" />{' '}
             <circle cx="7" cy="17" r="2" /> <circle cx="17" cy="17" r="2" />{' '}
             <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+        </svg>
+    ),
+    LargeCar: (
+        <svg
+            className="h-8 w-8 text-gray-500"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            {' '}
+            <path stroke="none" d="M0 0h24v24H0z" />{' '}
+            <circle cx="7" cy="17" r="2" /> <circle cx="17" cy="17" r="2" />{' '}
+            <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+        </svg>
+    ),
+    CaretDown: (
+        <svg
+            className="h-8 w-8 text-red-500"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            {' '}
+            <path stroke="none" d="M0 0h24v24H0z" />{' '}
+            <path d="M18 15l-6-6l-6 6h12" transform="rotate(180 12 12)" />
         </svg>
     ),
 }

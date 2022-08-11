@@ -12,7 +12,9 @@ type HomeContentsProps = {
 
 const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
     const [sortBy, setSortBy] = useState('Popularity')
-    const [transportation, setTransportation] = useState('Walk' as keyof Distance)
+    const [transportation, setTransportation] = useState(
+        'Walk' as keyof Distance
+    )
     return (
         <>
             <div className="flex flex-col mx-auto min-h-screen">
@@ -21,7 +23,7 @@ const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
                 <div className="text-5xl py-10 font-bold font-color-black self-center">
                     Explore Apartments Nearby
                 </div>
-                <div className="flex flex-wrap self-center space-x-8">
+                <div className="flex flex-wrap self-center justify-center mx-5">
                     <SortBy sortBy={sortBy} setSortBy={setSortBy} />
                     <Transportation
                         transportation={transportation}
@@ -31,7 +33,7 @@ const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
                 <CardContainer
                     transportation={transportation}
                     sortBy={sortBy}
-                    siteData = {props.siteData}
+                    siteData={props.siteData}
                 />
 
                 <Footer />
