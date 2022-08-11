@@ -97,7 +97,7 @@ const CardContainer: FunctionComponent<CardContainerProps> = (props) => {
     }
 
     return (
-        <div className="flex flex-wrap justify-center gap-10 relative m-10 mt-5">
+        <div className="flex flex-wrap justify-center gap-10 relative m-2 md:m-10 mt-5">
             {renderLocationCards()}
         </div>
     )

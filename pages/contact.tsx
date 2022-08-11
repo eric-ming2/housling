@@ -5,7 +5,7 @@ import ContactContents from '../components/ContactContents'
 
 const Home: NextPage = () => {
     return (
-        <div className="flex flex-col h-screen overflow-auto bg-gray-200">
+        <div className="flex flex-col w-full">
             <Header />
             <ContactContents />
             <Footer />

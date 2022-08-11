@@ -27,6 +27,9 @@ const ContactContents: FunctionComponent = () => {
             console.log('Response received')
             if (res.status === 200) {
                 console.log('Response succeeded!')
+            } else {
+                console.log('Email failed. Response: ')
+                console.log(res)
             }
         })
     }
@@ -160,7 +163,7 @@ const ContactContents: FunctionComponent = () => {
         </div>
     )
     return (
-        <section className="relative text-gray-600 body-font grow">
+        <section className="relative text-gray-600 body-font grow bg-gray-200">
             <div className="container flex flex-wrap px-5 py-24 mx-auto sm:flex-nowrap">
                 <div className="relative flex items-end justify-start p-10 overflow-hidden bg-gray-300 rounded-lg lg:w-2/3 md:w-1/2 sm:mr-10">
                     <iframe
