@@ -17,13 +17,13 @@ const HomeContents: FunctionComponent<HomeContentsProps> = (props) => {
     )
     return (
         <>
-            <div className="flex flex-col mx-auto min-h-screen">
+            <div className="flex flex-col mx-auto min-h-screen bg-gray-200">
                 <HomepageHero />
 
-                <div className="text-5xl py-10 font-bold font-color-black self-center">
+                <div className="md:text-5xl text-2xl py-5 md:py-10 font-bold font-color-black self-center">
                     Explore Apartments Nearby
                 </div>
-                <div className="flex flex-wrap self-center justify-center mx-5">
+                <div className="flex flex-wrap self-center justify-center md:mx-5">
                     <SortBy sortBy={sortBy} setSortBy={setSortBy} />
                     <Transportation
                         transportation={transportation}

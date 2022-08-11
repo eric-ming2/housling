@@ -323,8 +323,8 @@ const svgList: svgList = {
     Car: (
         <svg
             className="h-8 w-8 text-gray-500"
-            width="48"
-            height="48"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"

@@ -26,14 +26,12 @@ export const getStaticProps: GetStaticProps = async () => {
     }
 }
 
-//Todo: probably a disgusting use of any
+//Todo: probably a disgusting use of any. Also confused why w-200% is necessary.
 const Home: NextPage<any> = ({ siteData }) => {
     return (
-        <div className="absolute inset-0 w-[200%] md:w-full">
-            <div className="flex flex-col">
-                <Header />
-                <HomeContents siteData={siteData} />
-            </div>
+        <div className="flex flex-col w-full">
+            <Header />
+            <HomeContents siteData={siteData} />
         </div>
     )
 }

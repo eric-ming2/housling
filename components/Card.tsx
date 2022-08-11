@@ -40,7 +40,7 @@ const Card: FunctionComponent<CardProps> = (props) => {
 
     const getReviewSubleaseData = (
         <div className="grid place-items-center p-3 text-indigo-500 w-full border-t border-gray-300">
-            <div className="flex flex-row items-center w-auto">
+            <div className="flex flex-row items-center w-auto text-sm md:text-lg">
                 <div>
                     {' '}
                     See all {props.reviewCount} reviews and{' '}
@@ -64,9 +64,9 @@ const Card: FunctionComponent<CardProps> = (props) => {
     return (
         <a
             href={`/apartments/${location.name}`}
-            className="flex h-50 bg-white rounded-lg border shadow-md w-[600px] flex-row hover:bg-gray-100"
+            className="flex h-50 bg-white rounded-lg border shadow-md w-90% md:w-[600px] flex-row hover:bg-gray-100"
         >
-            <div className="rounded-t-lg h-full w-60 md:rounded-none md:rounded-l-lg relative overflow-hidden">
+            <div className="rounded-t-lg h-full w-36 md:w-60 md:rounded-none md:rounded-l-lg relative overflow-hidden">
                 <Image
                     src={location.image}
                     layout="fill"
@@ -75,8 +75,8 @@ const Card: FunctionComponent<CardProps> = (props) => {
                 />
             </div>
             <div className="flex flex-col w-full">
-                <div className="flex flex-col justify-between px-12 py-8  w-auto">
-                    <h5 className="text-4xl font-bold tracking-tight text-gray-900">
+                <div className="flex flex-col justify-between px-6 py-3 md:px-12 md:py-8 w-auto">
+                    <h5 className="text-3xl font-bold tracking-tight text-gray-900">
                         {location.name}
                     </h5>
                     <Rating rating={location.rating} />
